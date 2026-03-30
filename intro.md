@@ -177,7 +177,7 @@ Pas besoin de savoir coder pour l'utiliser. Mais il faut savoir **lui parler**.
 
 ### Outils abordés en cours
 - [ChatGPT](https://chat.openai.com) — LLM généraliste (reformulation de brief, plan de site. D'autres alternatives comme Mistral, Gemini...)
-- [Claude](https://claude.ai) — LLM généraliste (alternative, souvent plus structuré)
+- [Claude](https://claude.ai) — Agent code & LLM généraliste (alternative, souvent plus structuré)
 - [GitHub Copilot](https://github.com/features/copilot) — Agent IA intégré à VS Code
 - [Framer AI](https://www.framer.com) — Générateur de sites no-code par prompt
 - [PageSpeed Insights](https://pagespeed.web.dev) — Vérification de la qualité technique
