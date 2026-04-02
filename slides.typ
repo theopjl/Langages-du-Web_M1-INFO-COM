@@ -30,15 +30,72 @@
   #line(length: 40%, stroke: 2pt + c-accent)
   #v(16pt)
   #text(fill: rgb("#b0c4d8"), size: 11pt)[
-    Master Communication — M1 \
-    Public : communicants (non-développeurs) \
-    Durée : ~1h
+    Master Design de Communication, Innovation Médiation Numérique 1 \
+    TD Langages du Web — Produire du web avec des agents IA
   ]
   #v(1fr)
 ]
 
 // ══════════════════════════════════════════════════════════════
-// SLIDE 02 — ACCROCHE
+// SLIDE 02 — ORGANISATION DU MODULE
+// ══════════════════════════════════════════════════════════════
+#slide(title: [Organisation du module])[
+  #v(8pt)
+
+  #grid(
+    columns: (1fr, 1fr),
+    column-gutter: 20pt,
+    [
+      *Volume horaire*
+      #v(6pt)
+      #table(
+        columns: (auto, 1fr),
+        fill: (col, row) => if row == 0 { c-navy } else if calc.odd(row) { c-light } else { c-white },
+        inset: 8pt,
+        align: left,
+        table.header(
+          text(fill: c-white, weight: "bold")[Séance],
+          text(fill: c-white, weight: "bold")[Durée],
+        ),
+        [TD 1], [2h],
+        [TD 2], [1h30],
+        text(weight: "bold")[Total], text(weight: "bold")[3h30],
+      )
+    ],
+    [
+      *Déroulé des séances*
+      #v(6pt)
+      #block(
+        fill: c-accent.lighten(85%),
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + c-accent,
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: c-blue)[TD 1 — 2h]
+        #v(4pt)
+        Introduction aux agents IA dans la médiation numérique
+        #v(2pt)
+        Début du TD : rédaction des fichiers de spécifications
+      ]
+      #v(8pt)
+      #block(
+        fill: rgb("#e8f4e8"),
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + rgb("#48bb78"),
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: rgb("#276749"))[TD 2 — 1h30]
+        #v(4pt)
+        Développement du site avec un agent IA
+      ]
+    ],
+  )
+]
+
+// ══════════════════════════════════════════════════════════════
+// SLIDE 03 — ACCROCHE
 // ══════════════════════════════════════════════════════════════
 #slide(title: [Accroche : et si on faisait un site en 3 minutes ?])[
   #slide-tag[Intro — 10 min]
@@ -757,7 +814,7 @@
   #line(length: 30%, stroke: 2pt + c-accent)
   #v(16pt)
   #text(fill: rgb("#b0c4d8"), size: 12pt)[
-    M1 Communication — Master Développement Web \
-    IA Coding Agents
+    Master Design de Communication, Innovation Médiation Numérique 1 — M1 \
+    TD Langages du Web — Produire du web avec des agents IA
   ]
 ]
