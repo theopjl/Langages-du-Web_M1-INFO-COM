@@ -61,6 +61,33 @@
         [TD 2], [1h30],
         text(weight: "bold")[Total], text(weight: "bold")[3h30],
       )
+      
+      #v(10pt)
+
+      *Contact*
+      #block(
+        fill: c-light,
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + c-blue,
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: c-blue)[✉️ Mail]
+        #h(10pt)
+        #text[theo.poujol\@univ-st-etienne.fr]
+      ]
+
+      #block(
+        fill: c-light,
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + c-blue,
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: c-blue)[🏢 Bureau]
+        #h(10pt)
+        #text[I118, Télécom Saint-Étienne]
+      ]
     ],
     [
       *Déroulé des séances*
@@ -80,7 +107,7 @@
       ]
       #v(8pt)
       #block(
-        fill: rgb("#e8f4e8"),
+        fill: c-accent.lighten(85%),
         inset: 10pt,
         radius: 4pt,
         stroke: 1pt + rgb("#48bb78"),
@@ -90,34 +117,32 @@
         #v(4pt)
         Développement du site avec un agent IA
       ]
+      #v(8pt)
+      #block(
+        fill: c-accent.lighten(85%),
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + rgb("#e7b836"),
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: rgb("#e2a704"))[Présentation - 2h]
+        #v(4pt)
+        Soutenance de présentation et discussion critique
+      ]
+      #v(8pt)
+      #block(
+        fill: c-accent.lighten(85%),
+        inset: 10pt,
+        radius: 4pt,
+        stroke: 1pt + rgb("#e75050"),
+        width: 100%,
+      )[
+        #text(weight: "bold", fill: rgb("#ee2424"))[Rendu final — 1er mai]
+        #v(4pt)
+        Site fonctionnel
+      ]
     ],
   )
-
-  #v(10pt)
-
-  #block(
-    fill: c-light,
-    inset: 10pt,
-    radius: 4pt,
-    stroke: 1pt + c-blue,
-    width: 100%,
-  )[
-    #text(weight: "bold", fill: c-blue)[✉️ Mail]
-    #h(10pt)
-    #text[theo.poujol\@univ-st-etienne.fr]
-  ]
-
-  #block(
-    fill: c-light,
-    inset: 10pt,
-    radius: 4pt,
-    stroke: 1pt + c-blue,
-    width: 100%,
-  )[
-    #text(weight: "bold", fill: c-blue)[🏢 Bureau]
-    #h(10pt)
-    #text[I118, Télécom Saint-Étienne]
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -132,6 +157,9 @@
 
   - *Template de départ pour les projets* — MooTSE
   - *Guide et prérequis des outils* — MooTSE
+  - *Exemple de prompt pour aider à compléter le fichier de specs * — MooTSE
+  - *Guide pour installer des extensions VSCODE (à venir)* — MooTSE
+
   *Chemin d'accès :*
     MASTER Design de Communication ->
     DCIMN1 ->
