@@ -193,12 +193,6 @@
     *"Qui a déjà utilisé un LLM pour rédiger un texte ?* \
     Et pour produire quelque chose de visuel ou technique ?"
   ]
-
-  #v(10pt)
-
-  #text(fill: c-grey, style: "italic")[
-    Transition → *"Aujourd'hui, on va produire du web avec l'IA — de la conception au code."*
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -502,7 +496,6 @@
       #text(weight: "bold", fill: c-blue)[🤖 LLM 2 — Plan]
       #v(4pt)
       Prompt : *"Propose une structure de site"* \
-      Prompt : *"Génère un wireframe de la page d'accueil"*
       #v(4pt)
       → Arborescence, sections, composants visuels
       #v(6pt)
