@@ -92,10 +92,57 @@
       ]
     ],
   )
+
+  #v(10pt)
+
+  #block(
+    fill: c-light,
+    inset: 10pt,
+    radius: 4pt,
+    stroke: 1pt + c-blue,
+    width: 100%,
+  )[
+    #text(weight: "bold", fill: c-blue)[✉️ Mail]
+    #h(10pt)
+    #text[theo.poujol\@univ-st-etienne.fr]
+  ]
+
+  #block(
+    fill: c-light,
+    inset: 10pt,
+    radius: 4pt,
+    stroke: 1pt + c-blue,
+    width: 100%,
+  )[
+    #text(weight: "bold", fill: c-blue)[🏢 Bureau]
+    #h(10pt)
+    #text[I118, Télécom Saint-Étienne]
+  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
-// SLIDE 03 — ACCROCHE
+// SLIDE 03 — RESSOURCES DU COURS
+// ══════════════════════════════════════════════════════════════
+#slide(title: [Ressources du cours])[
+  #v(12pt)
+
+  *Où trouver les ressources ?*
+
+  #v(10pt)
+
+  - *Template de départ pour les projets* — MooTSE
+  - *Guide et prérequis des outils* — MooTSE
+  *Chemin d'accès :*
+    MASTER Design de Communication ->
+    DCIMN1 ->
+    Semestre 8 ->
+    S8UE4-Outils pour la communication (2) ->
+    UE4.2-Langages du web (front end) -> 
+    Partie3 - Dev web avec IA
+]
+
+// ══════════════════════════════════════════════════════════════
+// SLIDE 04 — ACCROCHE
 // ══════════════════════════════════════════════════════════════
 #slide(title: [Accroche : et si on faisait un site en 3 minutes ?])[
   #slide-tag[Intro — 10 min]
