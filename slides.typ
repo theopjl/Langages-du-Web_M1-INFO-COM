@@ -199,11 +199,6 @@
   #text(fill: c-grey, style: "italic")[
     Transition → *"Aujourd'hui, on va produire du web avec l'IA — de la conception au code."*
   ]
-
-  #speaker-note[
-    Faire la démo avant d'afficher cette slide si possible. Montrez un résultat concret,
-    pas le processus. L'effet de surprise est clé pour capter l'attention de non-techniciens.
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -228,9 +223,9 @@
     Ils *réduisent la dépendance* aux développeurs pour des tâches simples.
   ]
 
-  #speaker-note[
-    Insistez sur le fait que vous parlez à des futurs chefs de projet, chargés de com',
-    community managers — pas à des futurs développeurs. L'enjeu est la compréhension
+  #takeaway[
+    Futurs chefs de projet, chargés de com',
+    community managers. Compréhension
     stratégique, pas la maîtrise technique.
   ]
 ]
@@ -316,7 +311,7 @@
     ],
   )
 
-  #speaker-note[
+  #takeaway[
     Analogie utile : c'est comme donner un brief à un stagiaire très compétent
     techniquement, mais qui ne connaît pas votre contexte. Plus votre brief est précis,
     meilleur est le résultat.
@@ -415,9 +410,8 @@
     ]
   ]
 
-  #speaker-note[
-    Annoncez que vous allez détailler chaque étape dans les slides suivantes.
-    Insistez sur la linéarité du processus : chaque étape nourrit la suivante.
+  #takeaway[
+    Processus linéaire : chaque étape nourrit la suivante.
   ]
 ]
 
@@ -465,8 +459,8 @@
     ],
   )
 
-  #speaker-note[
-    Expliquez que l'IA est nulle pour inventer un positionnement de marque ou une ligne éditoriale.
+  #takeaway[
+    L'IA est nulle pour inventer un positionnement de marque ou une ligne éditoriale.
     C'est la valeur irremplaçable du communicant dans ce workflow.
   ]
 ]
@@ -563,8 +557,8 @@
     Réutilisable, partageable, modifiable à tout moment.
   ]
 
-  #speaker-note[
-    Comparez specs.md à un cahier des charges allégé. C'est un document vivant
+  #takeaway[
+    Specs.md c'est un cahier des charges allégé. C'est un document vivant
     que l'agent IA utilisera comme référence tout au long du projet.
     Insistez : sans ce fichier, l'IA perd le contexte entre les sessions.
   ]
@@ -663,11 +657,6 @@
     ],
     [Affinez, corrigez, relancez — c'est un dialogue],
   )
-
-  #speaker-note[
-    Lire le prompt exemple de intro.md à voix haute et demander aux étudiants
-    ce qui le rend efficace (rôle attribué, contexte, public cible, liste de pages, ton).
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -792,9 +781,8 @@
     [*Impact environnemental*],   [Chaque inférence LLM a un coût énergétique non négligeable],
   )
 
-  #speaker-note[
-    Pour la boîte noire : analogie du pilote automatique. Utile, mais il faut quand même
-    savoir piloter en manuel pour comprendre ce qui se passe et réagir si ça déraille.
+  #takeaway[
+    La boîte noire est comme un pilote automatique.
   ]
 ]
 
@@ -822,10 +810,8 @@
     Consigne : 2 minutes de réflexion individuelle, puis échange en groupe.
   ]
 
-  #speaker-note[
-    Pistes de réponses à susciter : PageSpeed Insights, WAVE pour l'accessibilité,
-    lecture des CGU, vérification du consentement cookies, relecture éditoriale.
-    L'objectif est de montrer que le regard critique du communicant reste indispensable.
+  #takeaway[
+    Le regard critique du communicant reste indispensable.
   ]
 ]
 
@@ -858,11 +844,6 @@
     [Qualité du code],        [...], [...], [...],
     [Accessibilité / RGPD],   [...], [...], [...],
   )
-
-  #speaker-note[
-    Remplir le tableau *avec* les étudiants à l'oral. Laissez les cases vides
-    intentionnellement — c'est un exercice collectif de 3-4 minutes.
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
