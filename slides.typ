@@ -357,6 +357,15 @@
 // ══════════════════════════════════════════════════════════════
 #section-title-slide(title: [Partie 2 — Comment ça fonctionne ? Le workflow de A à Z])
 
+#slide(title: [Le workflow de production avec l'IA])[
+  #slide-tag[Partie 2 — 20 min]
+  #v(6pt)
+
+  #question-bloc[
+    *Comment imaginez-vous le processus de production d'un site web avec l'IA ?* \
+    Quelles étapes vous semblent nécessaires ?
+  ]
+]
 // ══════════════════════════════════════════════════════════════
 // SLIDE 10 — WORKFLOW (VUE D'ENSEMBLE)
 // ══════════════════════════════════════════════════════════════
@@ -384,19 +393,19 @@
         ],
         align(center)[#text(fill: c-grey, size: 16pt)[↓]],
         block(fill: c-accent, inset: (x: 10pt, y: 5pt), radius: 3pt, width: 100%)[
-          #text(fill: c-white, weight: "bold")[🤖 LLM 1 — Reformulation du brief]
+          #text(fill: c-white, weight: "bold")[🤖 IA 1 — Reformulation du brief]
         ],
         align(center)[#text(fill: c-grey, size: 16pt)[↓]],
         block(fill: c-accent, inset: (x: 10pt, y: 5pt), radius: 3pt, width: 100%)[
-          #text(fill: c-white, weight: "bold")[🤖 LLM 2 — Plan de site + Wireframe]
+          #text(fill: c-white, weight: "bold")[🤖 IA 1 — Plan de site]
         ],
         align(center)[#text(fill: c-grey, size: 16pt)[↓]],
         block(fill: rgb("#6b46c1"), inset: (x: 10pt, y: 5pt), radius: 3pt, width: 100%)[
-          #text(fill: c-white, weight: "bold")[📄 specs.md — Document de référence unique]
+          #text(fill: c-white, weight: "bold")[🤖 IA 1 -📄 specs.md — Document de référence unique]
         ],
         align(center)[#text(fill: c-grey, size: 16pt)[↓]],
         block(fill: rgb("#276749"), inset: (x: 10pt, y: 5pt), radius: 3pt, width: 100%)[
-          #text(fill: c-white, weight: "bold")[💻 Agent IA — Génération du code HTML/CSS]
+          #text(fill: c-white, weight: "bold")[🤖 Agent IA 2— Génération du code HTML/CSS]
         ],
         align(center)[#text(fill: c-grey, size: 16pt)[↓]],
         block(fill: rgb("#1a6b40"), inset: (x: 10pt, y: 5pt), radius: 3pt, width: 100%)[
@@ -410,6 +419,13 @@
     Annoncez que vous allez détailler chaque étape dans les slides suivantes.
     Insistez sur la linéarité du processus : chaque étape nourrit la suivante.
   ]
+]
+
+#slide(title : [Le brief humain])[
+  #slide-tag[Partie 2 — 20 min]
+  #v(6pt)
+
+  #question-bloc([*Pour vous, quelles sont les informations essentielles à ajouter dans un brief de projet ?*])
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -458,13 +474,14 @@
 // ══════════════════════════════════════════════════════════════
 // SLIDE 12 — ÉTAPES 2 & 3 : LLM 1 + LLM 2
 // ══════════════════════════════════════════════════════════════
-#slide(title: [Étapes 2 & 3 — Les LLM au travail])[
+#slide(title: [Étapes 2 & 3 — Les IA au travail])[
   #slide-tag[Partie 2 — 20 min]
   #v(6pt)
 
   #grid(
     columns: (1fr, 1fr),
     column-gutter: 16pt,
+    row-gutter: 20pt,
     block(
       fill: c-accent.lighten(85%),
       inset: 10pt,
@@ -488,7 +505,7 @@
       radius: 4pt,
       stroke: 1pt + c-accent,
     )[
-      #text(weight: "bold", fill: c-blue)[🤖 LLM 2 — Plan + Wireframe]
+      #text(weight: "bold", fill: c-blue)[🤖 LLM 2 — Plan]
       #v(4pt)
       Prompt : *"Propose une structure de site"* \
       Prompt : *"Génère un wireframe de la page d'accueil"*
@@ -499,12 +516,23 @@
         Peut être un LLM différent — chacun a ses forces.
       ]
     ],
+    block(
+      fill: c-accent.lighten(85%),
+      inset: 10pt,
+      radius: 4pt,
+      stroke: 1pt + c-accent,
+    )[
+      #text(weight: "bold", fill: c-blue)[🤖 LLM 3 — Fichier Specs]
+      #v(4pt)
+      Prompt : *Exemple de prompt sur MooTSE* \
+      #v(4pt)
+      → Mémoire, contexte, règles et instructions de l'agent IA de développement
+      #v(6pt)
+      #text(fill: c-grey, size: 10pt, style: "italic")[
+        Peut être un LLM différent — chacun a ses forces.
+      ]
+    ]
   )
-
-  #v(8pt)
-  #takeaway[
-    LLM 1 ≠ LLM 2. Utilisez le bon outil pour la bonne tâche.
-  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -560,7 +588,7 @@
     )[
       #text(weight: "bold", fill: rgb("#276749"))[💻 Génération du code]
       #v(4pt)
-      Prompt : *"Voici mes specs, génère le HTML/CSS de la page d'accueil"*
+      Prompt : *Exemple de prompt sur MooTSE*
       #v(4pt)
       → Code généré section par section \
       → En s'appuyant sur specs.md
@@ -586,6 +614,11 @@
   #v(8pt)
   #takeaway[
     Le premier résultat n'est jamais le dernier — l'itération est normale et nécessaire.
+  ]
+
+  #v(8pt)
+  #takeaway[
+    IA rédaction ≠ Agent IA. Utilisez le bon outil pour la bonne tâche.
   ]
 ]
 
@@ -644,6 +677,7 @@
   #slide-tag[Partie 2 — 20 min]
   #v(8pt)
 
+  *Exemple de prompt bien formulé mais basique :*
   #block(
     fill: rgb("#1e1e2e"),
     inset: 14pt,
@@ -681,6 +715,10 @@
       #text(size: 10pt)[3 pages détaillées]
     ],
   )
+
+  #question-bloc[
+    *Que peut-on rajouter pour améliorer ce prompt ?* \
+  ]
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -688,6 +726,15 @@
 // ══════════════════════════════════════════════════════════════
 #section-title-slide(title: [Partie 3 — Avantages, limites et enjeux critiques])
 
+#slide(title: [Quels avantages pour les communicants])[
+  #slide-tag[Partie 3 — 15 min]
+  #v(6pt)
+
+  #question-bloc[
+    *Quels avantages voyez-vous à utiliser des IA coding agents dans votre futur métier ?* \
+    En quoi cela pourrait-il changer votre façon de travailler ?
+  ]
+]
 // ══════════════════════════════════════════════════════════════
 // SLIDE 18 — AVANTAGES POUR LES COMMUNICANTS
 // ══════════════════════════════════════════════════════════════
@@ -707,11 +754,20 @@
     [*Rapidité*],       [Prototypage en heures, pas en jours],
     [*Accessibilité*],  [Pas besoin de maîtriser le code],
     [*Autonomie*],      [Moins dépendant d'un développeur pour des modifications simples],
-    [*Créativité*],     [Focus sur le message et l'expérience utilisateur],
+    [*Créativité (selon profil)*],     [Focus sur le message et l'expérience utilisateur],
     [*Itération*],      [Tester plusieurs approches rapidement, sans coût technique],
   )
 ]
 
+#slide(title: [Quels risques pour les communicants])[
+  #slide-tag[Partie 3 — 15 min]
+  #v(6pt)
+
+  #question-bloc[
+    *Quels risques voyez-vous à utiliser des IA coding agents dans votre futur métier ?* \
+    En quoi cela pourrait-il changer votre façon de travailler ?
+  ]
+]
 // ══════════════════════════════════════════════════════════════
 // SLIDE 19 — LIMITES ET RISQUES
 // ══════════════════════════════════════════════════════════════
@@ -800,7 +856,6 @@
     [Compétences requises],   [...], [...], [...],
     [Flexibilité / contrôle], [...], [...], [...],
     [Qualité du code],        [...], [...], [...],
-    [Risques principaux],     [...], [...], [...],
     [Accessibilité / RGPD],   [...], [...], [...],
   )
 
@@ -822,7 +877,7 @@
     column-gutter: 14pt,
     row-gutter: 10pt,
     takeaway[
-      Un IA coding agent ne remplace pas la *réflexion stratégique* — c'est votre rôle.
+      Un IA coding agent ne remplace pas la *réflexion stratégique* c'est votre rôle.
     ],
     takeaway[
       Le *brief humain* est la fondation de tout le workflow.
